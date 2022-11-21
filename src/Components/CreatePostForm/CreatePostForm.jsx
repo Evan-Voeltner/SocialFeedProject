@@ -19,9 +19,9 @@ const AddEntryForm = (props) => {
     return (
     <form onSubmit={handleSubmit}>
       <label>Name</label>
-      <input type="text" value={name} onChange={(event) => setName(parseFloat(event.target.value))}></input>
+      <input type="text" value={name} onChange={(event) => setName(event.target.value)}></input>
       <label>Post</label>
-      <input type="text" value={post} onChange={(event) => setPost(parseFloat(event.target.value))}></input>
+      <input type="text" value={post} onChange={(event) => setPost(event.target.value)}></input>
       <button type="submit">Add</button>
     </form>
   );
