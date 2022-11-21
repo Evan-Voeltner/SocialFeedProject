@@ -24,7 +24,7 @@ const Post = (props) => {
   }
 
   return (
-    <div>
+    <div className="border-box" style={{'backgroundColor': 'lightblue'}}>
       <h1>{props.post.name}</h1>
       <p>{props.post.post}</p>
       <span>

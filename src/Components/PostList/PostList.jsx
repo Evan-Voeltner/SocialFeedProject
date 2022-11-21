@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Post from "../Post/Post";
 const PostList = (props) => {
   return (
-    <div>
+    <div >
       {props.parentPosts.map((post) => {
         return (
           <Post post={post}/>
