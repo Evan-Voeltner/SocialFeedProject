@@ -12,7 +12,7 @@ function App() {
 
   return <div>
     <CreatePostForm addNewPost={addNewPost} />
-    <PostList />
+    <PostList parentPosts={posts}/>
   </div>;
 }
 
