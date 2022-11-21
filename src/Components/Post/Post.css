@@ -1,0 +1,16 @@
+.active-like-button{
+    background-color: green;
+}
+
+.inactive-like-button{
+    background-color: lightgrey;
+}
+
+.active-dislike-button{
+    background-color: red;
+}
+
+.inactive-dislike-button{
+    background-color: lightgrey;
+}
+
