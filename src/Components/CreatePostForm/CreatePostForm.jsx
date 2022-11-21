@@ -1,12 +1,26 @@
 import React, { useState } from "react";
 
 const AddEntryForm = (props) => {
-  return (
-    <form>
+  
+    const [name, setName] = useState('');
+    const [post, setPost] = useState('');
+
+    function handleSubmit(event){
+      event.preventDefault();
+
+      let newPost = {
+        name: name,
+        post: post,
+      }
+    }
+  
+    return (
+    <form onSubmit={handleSubmit}>
       <label>Name</label>
-      <input type="text"></input>
-      <label>post</label>
-      <input type="text"></input>
+      <input type="text" value={name} onChange={(event) => setName(parseFloat(event.target.value))}></input>
+      <label>Post</label>
+      <input type="text" value={post} onChange={(event) => setPost(parseFloat(event.target.value))}></input>
+      <button type="submit">Add</button>
     </form>
   );
 };
